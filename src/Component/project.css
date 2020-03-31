@@ -1,0 +1,25 @@
+.ptitle{
+    color: rgb(0, 89, 255);
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.pimage{
+    background-color:black;
+    display: block;
+    margin: auto;
+    width: 50%;
+    
+}
+.smallicon{
+    margin-left: 10px;
+    width: 5%;
+    height: 50%;
+    position: relative;
+   top:15px;
+}
+.block{
+    display: flexbox;
+}
+.avatar{
+    border-radius: 50%;
+}
