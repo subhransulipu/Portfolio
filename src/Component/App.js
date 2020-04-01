@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React,{Component} from 'react';
 import Project from './project';
 import SOCIAL_PROFILE from './socialProfile';
 import profile from "../assets/profile.jpg";
 import Title from "./student";
-import Jokes from "./Jokes"
-import './project.css'
+import Header from './Header';
+import './project.css';
 
 
 class App  extends Component {
@@ -23,8 +24,9 @@ class App  extends Component {
 
     return(
           <div>
+            <Header/>
             <h1>Hellow</h1>
-            <img src={profile}  className="avatar"></img>
+            <img src={profile}  className='avatar'/>
              {this.state.intro ?
               <div>
               <h2>Hi, my name is Subhransu. I'm a software Engineer.</h2>
@@ -50,8 +52,7 @@ class App  extends Component {
             <Project></Project>
             <hr></hr>
             <SOCIAL_PROFILE></SOCIAL_PROFILE>
-            <hr></hr>
-            <Jokes></Jokes>
+           
         
           </div>
           

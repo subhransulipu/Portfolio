@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Component/App';
-// import Project from './Project/project'
+import { Router,Switch,Route} from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 import '../src/index.css';
+import Jokes from './Component/Jokes';
 
 
-ReactDOM.render(<App></App>, document.getElementById('root'));
+ReactDOM.render(
+    <Router history={createBrowserHistory()}>
+        <Switch>
+            <Route exact={true} path="/" component={App}/>
+            <Route path="/jokes" component={Jokes}/>
+
+        </Switch>
+    </Router>
+    , document.getElementById('root'));
